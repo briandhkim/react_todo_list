@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {getAll} from '../actions';
 import todoData from '../helpers/dummy_data';
+import TodoItem from './todo_item';
 
 class TodoList extends Component {
 	componentDidMount(){
@@ -11,7 +12,7 @@ class TodoList extends Component {
 	render(){
 
 		const todoElements = this.props.allTodos.map((todoItem, index) => {
-			return <li key={index} className="collection-item">{todoItem.title}</li>
+			return <TodoItem key={index} index={index} item={todoItem}/>
 		});
 		console.log('list from props', this.props.allTodos);
 		return(
