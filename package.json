@@ -1,14 +1,14 @@
 {
-  "name": "react_starter",
+  "name": "react_todo_list",
   "version": "1.0.0",
-  "description": "Starting setup for react redux project",
+  "description": "react practice project",
   "main": "index.js",
   "scripts": {
     "start": "node dev_server.js",
     "bundle": "node_modules/.bin/webpack --config webpack.deploy.config.js --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Scott Bowler",
+  "author": "Brian",
   "license": "ISC",
   "repository": {
     "type": "git",
