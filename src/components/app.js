@@ -1,10 +1,14 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import TodoList from './todo_list';
+import AddForm from './add_form';
 
 const App = () => (
     <div className="container">
-    	<h1 className="center-align">todolist</h1>
+    	<h1 className="center-align">do it</h1>
+    	<hr/>
+    	<AddForm/>
+    	<hr/>
     	<TodoList />
     </div>
 );
