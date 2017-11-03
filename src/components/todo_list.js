@@ -14,7 +14,7 @@ class TodoList extends Component {
 		const todoElements = this.props.allTodos.map((todoItem, index) => {
 			return <TodoItem key={index} index={index} item={todoItem}/>
 		});
-		console.log('list from props', this.props.allTodos);
+		// console.log('list from props', this.props.allTodos);
 		return(
 			<div>
 				<ul className="collection">

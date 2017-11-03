@@ -24,3 +24,10 @@ export function deleteTodo(index){
 		payload: index
 	}
 }
+
+export function toggleTodo(index){
+	return{
+		type: types.TOGGLE_TODO,
+		payload: index
+	}
+}

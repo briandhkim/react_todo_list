@@ -8,7 +8,8 @@ class AddForm extends Component{
 		super(props);
 		this.state = {
 			title: '',
-			details: ''
+			details: '',
+			complete: false
 		}
 
 		this.handleInputChange = this.handleInputChange.bind(this);
@@ -27,7 +28,8 @@ class AddForm extends Component{
 		this.props.addTodo(this.state);
 		this.setState({
 			title:'',
-			details: ''
+			details: '',
+			complete: false
 		});
 	}
 
